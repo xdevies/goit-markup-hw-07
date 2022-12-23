@@ -264,16 +264,13 @@ body {
 
 .feature__list {
   justify-content: center;
+  gap: 30px;
 }
 
 .feature__item {
+  flex-basis: calc((100% - 90px) / 4);
   justify-content: center;
-  width: 270px;
-  height: 120px;
-  background-color: var(--back-sec-color);
-}
-.feature__item:not(:last-child) {
-  margin-right: 30px;
+  height: 246px;
 }
 
 .feature-list__title {
@@ -295,6 +292,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--p-color);
   max-width: 270px;
+}
+
+.list-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--back-sec-color);
 }
 
 .section-work_title {
@@ -1005,7 +1010,7 @@ body {
   margin-top: 20px;
 }
 
-.header .container, .navigation__list, .contact__mail, .contact, .nav, .main-btn, .feature__list, .feature__item, .feature-list__title, .work__text, .team-soc-list, .team-soc-link, .clients__list, .client-link, .social__list, .social__link, .port-filter__list, .filter-portfolio__btn, .card__list, .sub-form__btn, .modal .btn-closed, .form-modal__btn, .checkbox {
+.header .container, .navigation__list, .contact__mail, .contact, .nav, .main-btn, .feature__list, .feature-list__title, .work__text, .team-soc-list, .team-soc-link, .clients__list, .client-link, .social__list, .social__link, .port-filter__list, .filter-portfolio__btn, .card__list, .sub-form__btn, .modal .btn-closed, .form-modal__btn, .checkbox {
   display: flex;
   align-items: center;
 }

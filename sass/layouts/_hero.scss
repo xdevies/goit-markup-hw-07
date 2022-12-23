@@ -50,20 +50,18 @@ background-size: cover;
 .feature__list{
     @extend %flex-align;
     justify-content: center;
-     
+     gap: 30px;
 }
 
 
 .feature__item{
-   @extend %flex-align;
+    flex-basis: calc((100% - 3 * 30px ) /4 );
     justify-content: center;
-width: 270px;
-height: 120px;
-background-color: var(--back-sec-color);
-   &:not(:last-child){
-    margin-right: 30px;
+  height: 246px;
+ 
+   
 }
-}
+
 
 
 
@@ -88,6 +86,23 @@ letter-spacing: 0.03em;
 color:var(--p-color);
 max-width: 270px;
 }
+
+
+
+
+
+
+
+.list-svg{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 120px;
+   background-color: var(--back-sec-color);
+}
+
+
+
 
 .section-work_title{
     color: var(--primary-color);
